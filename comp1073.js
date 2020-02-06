@@ -185,5 +185,5 @@ delete Vergil.lastName;
 let Vergil=document.getElementById("Vergil");
 Vergil.addEventListener('click',function(){
     Vergil.data();
-}
+})
 /*-----------------------------*/
