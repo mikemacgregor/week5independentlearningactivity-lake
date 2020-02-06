@@ -1,6 +1,6 @@
 // JavaScript Document
 
-//add your object here
+//add your object here 
 const jess = {
   name: ['Jessica','Gilfillan'],
   age:34,
@@ -30,27 +30,13 @@ const student {
   }
 };
 
-//nik
-let nikBrennan = {
-      name: ["Nik", "Brennan"],
-      program: "Computer Science",
-      home: "Barrie",
-      interests: ["Video games", "Streaming", "Playing with my doggos"],
-      myName: function(){
-            alert("Hi, I am " + name[0]);
-      },
-      info: function(){
-            alert("Hi, I am " + this.name[0] + " " + this.name[1] +". My interests consist of " + this.interests + ". I live in " + this.home);
-      }
-};
 
 //add pet peeve
 student.petPeeve = "I don't know";
-nikBrennan.petPeeve = "Zach Green";
+
 
 //delete last name
 delete student.name.last;
-delete nikBrennan.name.last;
 
 let buttonStella = document.getElementById('stella');
 button.addEventListener('click', function(){
@@ -84,45 +70,68 @@ gillianButton.addEventListener('click', function() {
 });
 // end gillian
 
-//add event listener function or event handler property here
+//add event listener function or event handler property here 
 
-let button = document.getElementById('jess');
+let button = document.getElementById('jess'); 
 let button1 = document.getElementById('shadow');
-//button.addEventListener('click', jess.greeting);
+//button.addEventListener('click', jess.greeting); 
 
 button.addEventListener('click', function(){
-  jess.bio();
+  jess.bio(); 
 })
+
+//nik
+let nikBrennan = {
+      name: ["Nik", "Brennan"],
+      program: "Computer Science",
+      home: "Barrie",
+      interests: ["Video games", "Streaming", "Playing with my doggos"],
+      myName: function(){
+            alert("Hi, I am " + name[0]);
+      },
+      info: function(){
+            alert("Hi, I am " + this.name[0] + " " + this.name[1] +". My interests consist of " + this.interests + ". I live in " + this.home);
+      }
+};
+
+nikBrennan.petPeeve = "Zach Green";
+delete nikBrennan.name.last;
 
 let buttonNik = document.getElementById("nik");
 buttonNik.addEventListener('click', function(){
-      nikBrennan.info();
+      nikBrennan.info(); 
 })
 
-//begin Alex
-let person = {
-  name: {
-    first: 'Alex',
-    last: 'Blom'
-  },
-  program: 'Computer Science',
-  interests: ['videogames', 'programming', 'hamsters', 'movies', 'reading'],
+//Tobi
+let tobi = {
+      name:{
+            first: 'Tobi',
+            last: 'Quadri',
+      },
+      age: 18,
+      interests: ['Basketball', 'Music', 'Cars', 'Fashion', 'Napping', 'Vibing', 'Been in the Zone'],
+      program: 'Computer Science',
+      home: 'Barrie',
+      greeting: function(){
+            alert('Hi, I am ' +tobi.name.first + tobi.name.last);
 
-  greeting: function(){
-    alert('Hi, I am' + person.name.first + person.name.last);
-  },
+      },
 
-  info: function(){
-    alert(person.name.first + person.name.last + ',' + person.program + 'my interests are: ' + person.interests);
-  }
+      bio: function(){
+            alert(tobi.name.first + ' ' + tobi.name.last + ' is' + tobi.age + ' years old. I like' + tobi.interests[0] + ' and' + interests[1] + tobi.program + '.');
+
+            
+      }
+
+      
+
 }
+ 
+//pet Peeve
+let petPeeve = ['Snakes', 'CatLitter']
 
-person.peeve = 'unclear instructions on assignments';
-
-delete person.name.last;
-
-let alexButton = document.getElementById('alexblom');
-alexButton.addEventListener('click', function() {
-  alexblom.person()
-});
-//end Alex
+delete tobi.name.last;
+let buttontobi = document.getElementById("tobiQuadri");
+buttontobi.addEventListener('click', function(){
+      tobiQuadri.info(); 
+})
