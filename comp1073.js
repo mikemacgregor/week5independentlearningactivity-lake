@@ -42,6 +42,31 @@ student.bio});
 
 //end stella
 
+// gillian:
+let gillian = {
+  name: {
+    first: 'Gillian',
+    last: 'Thorne'
+  },
+  program: 'Computer Science',
+  home: 'Barrie',
+  interests: ['Taylor Swift', 'koalas', 'sleeping'];
+  greeting: function() {
+    alert('Hi, I am ' + gillian.name.first);
+  },
+  about: function() {
+    alert(gillian.name.first + ' is studying ' + gillian.program ' and lives at home in ' + gillian.home  + '. She likes ' + gillian.interests[0] + ', ' + gillian.interests[1] + ' and ' gillian.interests[2] + '.');
+  }
+}
+
+gillian.petPeeve = 'loud noises';
+delete gillian.name.last;
+
+let gillianButton = document.getElementById('gillian');
+gillianButton.addEventListener('click', function() {
+  gillian.bio});
+// end gillian
+
 //add event listener function or event handler property here 
 
 let button = document.getElementById('jess'); 
