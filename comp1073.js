@@ -231,4 +231,9 @@ mikemacgregor.petPeeve = 'my daughter not picking up after herself';
 
 delete mikemacgregor.name.last;
 	
+let buttonMike = document.getElementById('mikemacgregor');
+buttonMike.addEventListener('click', function(){
+	mikemacgregor.myInfo
+});
+	
 // end mikemacgregor
