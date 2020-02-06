@@ -42,6 +42,35 @@ student.bio});
 
 //end stella
 
+//Magnus
+const Magnus = {
+  name: {
+    first: "Riley",
+    middle: "Magnus",
+    last: "Bosetti"
+  },
+  age: 18,
+  program: "Computer Science",
+  home: "where I sleep",
+  interests: ["Skiing","Puzzles","Sleep"],
+
+  greeting: function(){
+    alert("Hi, I am " + name.middle);
+  },
+
+  bio: function(){
+    alert(Magnus.name.middle + " is into " + Magnus.interests[0] " and " + Magnus.interests[1] + " and "+ Magnus.interests[2] + ". Home is " + Magnus.Home + ".");
+  }
+}
+
+delete Magnus.name.last;
+Magnus.petpeeve = "POEPLE!!! LEAVE ME ALONE ALREADY";
+
+let buttonMagnus = document.getElementById('magnus');
+button.addEventListener('click', function(){
+Magnus.bio});
+//Magnus end
+
 // gillian:
 let gillian = {
   name: {
