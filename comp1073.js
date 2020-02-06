@@ -183,8 +183,8 @@ Vergil.petPeeve = 'Messes',
 delete Vergil.lastName;
 
 let vergilBtn=document.getElementById("Vergil");
-Vergil.addEventListener('click',function(){
-    Vergil.data();
+vergilBtn.addEventListener('click',function(){
+    vergilBtn.data();
 }
 /*-----------------------------*/
 // Adam
