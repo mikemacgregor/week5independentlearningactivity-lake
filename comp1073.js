@@ -30,13 +30,27 @@ const student {
   }
 };
 
+//nik
+let nikBrennan = {
+      name: ["Nik", "Brennan"],
+      program: "Computer Science",
+      home: "Barrie",
+      interests: ["Video games", "Streaming", "Playing with my doggos"],
+      myName: function(){
+            alert("Hi, I am " + name[0]);
+      },
+      info: function(){
+            alert("Hi, I am " + this.name[0] + " " + this.name[1] +". My interests consist of " + this.interests + ". I live in " + this.home);
+      }
+};
 
 //add pet peeve
 student.petPeeve = "I don't know";
-
+nikBrennan.petPeeve = "Zach Green";
 
 //delete last name
 delete student.name.last;
+delete nikBrennan.name.last;
 
 let buttonStella = document.getElementById('stella');
 button.addEventListener('click', function(){
@@ -77,108 +91,38 @@ let button1 = document.getElementById('shadow');
 //button.addEventListener('click', jess.greeting);
 
 button.addEventListener('click', function(){
-  jess.bio(); 
+  jess.bio();
 })
-
-
-//--------------------------------------------------------------------------------------------------
-//Braden Coates
-const braden = {
-  name: {
-    first: "Braden",
-    last: "Coates"
-  },
-  program: "Computer Science",
-  home: "Hamilton",
-  interests: ["Video games", "Board games", "Programming", "Reading", "Camping"],
-  iAm: () => {
-    alert(`Hi, I am ${braden.name.first}`);
-  },
-  info: () => {
-    alert(`My name is ${braden.name.first} ${braden.name.last}, I am from ${braden.home} and am taking ${braden.program}. My interests are ${braden.interests[2]} and ${braden.interests[4]}. My biggest pet peeve is ${braden.peeve}.`);
-  }
-}
-
-braden.peeve = "my code not compiling"
-
-delete braden.name.last;
-
-let buttonBraden = document.getElementById("braden");
-buttonBraden.addEventListener('click', () => {
-  braden.info();
-});
-
-//--------------------------------------------------------------------------------------------------
-
-//nik
-let nikBrennan = {
-      name: ["Nik", "Brennan"],
-      program: "Computer Science",
-      home: "Barrie",
-      interests: ["Video games", "Streaming", "Playing with my doggos"],
-      myName: function(){
-            alert("Hi, I am " + name[0]);
-      },
-      info: function(){
-            alert("Hi, I am " + this.name[0] + " " + this.name[1] +". My interests consist of " + this.interests + ". I live in " + this.home);
-      }
-};
-
-nikBrennan.petPeeve = "Zach Green";
-delete nikBrennan.name.last;
 
 let buttonNik = document.getElementById("nik");
 buttonNik.addEventListener('click', function(){
-      nikBrennan.info(); 
+      nikBrennan.info();
 })
-//Ryan Vickers bio
-let Ryan = {
-    name: {
-        first: 'Ryan',
-        last: 'Vickers'
-    },
-    program: 'Lakehead/ Georgian Computer Science',
-    home: 'Meaford',
-    interests: 'video games',
-    hello: function () {
-        alert('Hi' + Ryan.name.first)
-    },
-    bio: function () {
-        alert(Ryan.name.first + '' + Ryan.name.last + '' + Ryan.program + '' + Ryan.home + '' + Ryan.interests + '.')
-    }
-}
-Ryan.petpeeve = 'bruh';
-delete Ryan.name.last;
 
-let buttonRyan=doccument.getElementById("ryanVickers");
-buttonRyan.addEventListener('click',function(){
-  Ryan.Bio();
-}
-                            
- //Cole
-     let cole ={
-      
-      first: 'Cole',
-       last: 'Burgess',
-        
-      program: 'Lakehead Computer Science',
-      home: 'Meaford',
-      interests:['Music','Games', 'Computers'],
-      peeves:{
-            annoys: 'My roomate'
-      },
-      greeting: function(){
-            alert('Hi, I am' + name.first +' '+ name.last );
-      },
+//begin Alex
+let person = {
+  name: {
+    first: 'Alex',
+    last: 'Blom'
+  },
+  program: 'Computer Science',
+  interests: ['videogames', 'programming', 'hamsters', 'movies', 'reading'],
 
-      displayAll: function(){
-            alert('I am '+this.first+' from ' + this.home + ', ' +cole.peeves.annoys+ ' annoys me. ' + 'I enjoy '+this.interests[0]);
-      } 
+  greeting: function(){
+    alert('Hi, I am' + person.name.first + person.name.last);
+  },
+
+  info: function(){
+    alert(person.name.first + person.name.last + ',' + person.program + 'my interests are: ' + person.interests);
+  }
 }
 
+person.peeve = 'unclear instructions on assignments';
 
-let coleButton = document.getElementById('cole');
+delete person.name.last;
 
-coleButton.addEventListener('click', function(){
-      cole.displayAll(); 
-    })
+let alexButton = document.getElementById('alexblom');
+alexButton.addEventListener('click', function() {
+  alexblom.person()
+});
+//end Alex
