@@ -182,7 +182,7 @@ const Vergil = {
 Vergil.petPeeve = 'Messes',
 delete Vergil.lastName;
 
-let Vergilbtn=document.getElementById("Vergil");
+let vergilBtn=document.getElementById("Vergil");
 Vergil.addEventListener('click',function(){
     Vergil.data();
 }
