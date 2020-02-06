@@ -30,27 +30,13 @@ const student {
   }
 };
 
-//nik
-let nikBrennan = {
-      name: ["Nik", "Brennan"],
-      program: "Computer Science",
-      home: "Barrie",
-      interests: ["Video games", "Streaming", "Playing with my doggos"],
-      myName: function(){
-            alert("Hi, I am " + name[0]);
-      },
-      info: function(){
-            alert("Hi, I am " + this.name[0] + " " + this.name[1] +". My interests consist of " + this.interests + ". I live in " + this.home);
-      }
-};
 
 //add pet peeve
 student.petPeeve = "I don't know";
-nikBrennan.petPeeve = "Zach Green";
+
 
 //delete last name
 delete student.name.last;
-delete nikBrennan.name.last;
 
 let buttonStella = document.getElementById('stella');
 button.addEventListener('click', function(){
@@ -93,6 +79,23 @@ let button1 = document.getElementById('shadow');
 button.addEventListener('click', function(){
   jess.bio(); 
 })
+
+//nik
+let nikBrennan = {
+      name: ["Nik", "Brennan"],
+      program: "Computer Science",
+      home: "Barrie",
+      interests: ["Video games", "Streaming", "Playing with my doggos"],
+      myName: function(){
+            alert("Hi, I am " + name[0]);
+      },
+      info: function(){
+            alert("Hi, I am " + this.name[0] + " " + this.name[1] +". My interests consist of " + this.interests + ". I live in " + this.home);
+      }
+};
+
+nikBrennan.petPeeve = "Zach Green";
+delete nikBrennan.name.last;
 
 let buttonNik = document.getElementById("nik");
 buttonNik.addEventListener('click', function(){
