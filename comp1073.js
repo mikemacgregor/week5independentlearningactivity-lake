@@ -207,3 +207,28 @@ const adamp = {
 let adamButton=document.getElementByID("adamp");
 adamButton.addEventListener('click',function(){
     adamButton.bio();
+	
+// mikemacgregor
+	
+let mikemacgregor = {
+  name: {
+    first: 'Mike',
+    last: 'MacGregor'
+  },
+  program: 'COPR',
+  home: 'Barrie',
+  interests: ['soccer', 'fantasy football', 'comics'],
+  hi: function() {
+    alert('Hi, I am ' + mikemacgregor.name.first + ' ' + mikemacgregor.name.last);
+  },
+  myInfo: function() {
+    var info = JSON.stringify(mikemacgregor);
+    alert(info);
+  }
+};
+
+mikemacgregor.petPeeve = 'my daughter not picking up after herself';
+
+delete mikemacgregor.name.last;
+	
+// end mikemacgregor
