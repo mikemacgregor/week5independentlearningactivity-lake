@@ -101,37 +101,26 @@ let buttonNik = document.getElementById("nik");
 buttonNik.addEventListener('click', function(){
       nikBrennan.info(); 
 })
+//Ryan Vickers bio
+let Ryan = {
+    name: {
+        first: 'Ryan',
+        last: 'Vickers'
+    },
+    program: 'Lakehead/ Georgian Computer Science',
+    home: 'Meaford',
+    interests: 'video games',
+    hello: function () {
+        alert('Hi' + Ryan.name.first)
+    },
+    bio: function () {
+        alert(Ryan.name.first + '' + Ryan.name.last + '' + Ryan.program + '' + Ryan.home + '' + Ryan.interests + '.')
+    }
+}
+Ryan.petpeeve = 'bruh';
+delete Ryan.name.last;
 
-
-//Will
-1.) Create an object to represent you.
-let me = {
-  //properites
-  name: {
-    first: 'William',
-    last: 'Van Wieringen'
-  },
-  program: 'comp1073',
-  home: 'Parents House',
-  interests: ['napping', 'eating', 'Gaming', 'doggies'],
-  petPeeve: 'When a computer or phone won''t load a page fast enough',
-  //methods
-
-  greeting: function() {
-    alert('Hi ' + me.name.first);
-  },
-  bio: function(){
-    alert(me.name.first + ' ' + me.name.last + 'my program is ' +  me.program + ' I live in my ' + me.home + ' I like ' + me.interests[0] + ' and ' + me.interests[1] + ' and ' + me.interests[2] + ' and ' + me.interests[3]);
-
-  }
-
-};
-//add petPeeve
-me.petPeeve = 'When a computer or phone won''t load a page fast enough';
-//delete your last name
-delete me.name.last;
-
-let buttonMe = document.getElementById("me");
-buttonMe.addEventListener('click', function(){
-      me.info(); 
-})
+let buttonRyan=doccument.getElementById("ryanVickers");
+buttonRyan.addEventListener('click',function(){
+  Ryan.Bio();
+}
