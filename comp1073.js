@@ -13,6 +13,34 @@ const jess = {
   }
 }
 
+//stella
+const student {
+  name: {
+    first: 'Stella',
+    last: 'Gray'
+  },
+  program: 'Computer Science',
+  home: 'Field, ON',
+  interests: ['reading', 'watching tv/movies'],
+  greeting: function () {
+    alert('Hi, I am' + student.name.first + ' ' + student.name.last)
+  },
+  bio: function () {
+    alert(student.name.first + ' ' + student.name.last + ' is in the ' + student.program + ' program, she calls' + student.home + ' home. Her intersts are' + student.interests[0] + ' and ' + student.intersts[1] + '.');
+  }
+};
+
+//add pet peeve
+student.petPeeve = "I don't know";
+
+//delete last name
+delete student.name.last;
+
+let buttonStella = document.getElementById('stella');
+button.addEventListener('click', function(){
+student.bio});
+
+//end stella
 
 //add event listener function or event handler property here 
 
