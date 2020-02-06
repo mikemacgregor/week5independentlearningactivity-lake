@@ -69,17 +69,42 @@ gillianButton.addEventListener('click', function() {
   gillian.bio()
 });
 // end gillian
+//awais
+name : {
+		first: 'Awais',
+		last : 'Nisar'
+	},
+	program: 'Computer Science',
+	home: 'Toronto,ON',
+	interest: ['bed','food','netlfix','sports', 'computer'],
+	
+	greeting: function() {
+		alert('Hi, I am' + me.name.first + ' ' + me.name.last);
+	},
+	
+	bio: function(){
+		alert(me.name.first + ' ' + me.name.last + ' is in the' + me.program + '. He call his home in ' + me.home + ' His interests are ' + me.interest[0]+',' + me.interest[1]+','+ me.interest[2]+',' + me.interest[3]',' me.interest[4] + '.')
+	}
+	
+let memberName = 'annoying';
+	let memberProperty = 'mosquitos';
+	
+	me[memberName] = memberProperty;
 
+	delete me.name.last; 
+
+//end awais
 //add event listener function or event handler property here 
 
 let button = document.getElementById('jess'); 
 let button1 = document.getElementById('shadow');
-//button.addEventListener('click', jess.greeting); 
+let awaisbutton = document.getElementId('awais');//button.addEventListener('click', jess.greeting); 
 
 button.addEventListener('click', function(){
   jess.bio(); 
 })
-
+awaisbutton.addEventListener('click', function(){
+  me.bio(); })
 //nik
 let nikBrennan = {
       name: ["Nik", "Brennan"],
