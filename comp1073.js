@@ -101,3 +101,37 @@ let buttonNik = document.getElementById("nik");
 buttonNik.addEventListener('click', function(){
       nikBrennan.info(); 
 })
+
+
+//Will
+1.) Create an object to represent you.
+let me = {
+  //properites
+  name: {
+    first: 'William',
+    last: 'Van Wieringen'
+  },
+  program: 'comp1073',
+  home: 'Parents House',
+  interests: ['napping', 'eating', 'Gaming', 'doggies'],
+  petPeeve: 'When a computer or phone won''t load a page fast enough',
+  //methods
+
+  greeting: function() {
+    alert('Hi ' + me.name.first);
+  },
+  bio: function(){
+    alert(me.name.first + ' ' + me.name.last + 'my program is ' +  me.program + ' I live in my ' + me.home + ' I like ' + me.interests[0] + ' and ' + me.interests[1] + ' and ' + me.interests[2] + ' and ' + me.interests[3]);
+
+  }
+
+};
+//add petPeeve
+me.petPeeve = 'When a computer or phone won''t load a page fast enough';
+//delete your last name
+delete me.name.last;
+
+let buttonMe = document.getElementById("me");
+buttonMe.addEventListener('click', function(){
+      me.info(); 
+})
