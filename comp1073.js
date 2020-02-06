@@ -185,34 +185,25 @@ delete Vergil.lastName;
 let Vergil=document.getElementById("Vergil");
 Vergil.addEventListener('click',function(){
     Vergil.data();
-})
+}
 /*-----------------------------*/
+// Adam
+const adamp = {
+      name: {
+            first: 'Adam',
+            last: 'Peskett'
+      },
+      program: 'Computer Science',
+      home: 'Innisfil',
+      interests: ['auto racing', 'sports', 'reading'],
+      hello: function() {
+            alert('Hi, I am ' + adamp.name.first)
+      },
 
-//Parth Joshi
-let myinfo= {
-name: ['Parth','Joshi'],
-program:'LUGC Computer Science',
-myhome:'Delhi,India',
-interests:['Travelling','Cooking','Coding','Reading'],
-the_name:function() {
-      alert('Hi, I am'+myinfo.name.first);
-},
-bio:function() {
-      alert(myinfo.name.first+ ' '+myinfo.name.last+' My Program is '+myinfo.program+ ' '+myinfo.myhome+' is my home '+'  my interests are: '+myinfo.interests+'.');
-}
-}
-
-let petpeeve= {
-      pet_peeve: 'Way too Cold Weather !',
-      pp: function() {
-            alert('Biggest Pet Peeve is '+petpeeve.pet_peeve+'.');
+      bio: function() {
+            alert(adamp.name.first + ' ' + adamp.name.last + 'is taking a ' + adamp.program + ' course. He lives in ' + adamp.home + ' and is interested in ' + adamp.interests[0] + ', ' + adamp.interests[1] + ', ' + adamp.interests[2] + '.')
       }
 }
-
-delete myinfo.name.last;
-
-let buttonPj=document.getElementById("parth");
-buttonpj.addEventListener('click',function(){myinfo.bio();})
-
-//Parth's code ends here
-
+let adamButton=document.getElementByID("adamp");
+adamButton.addEventListener('click',function(){
+    adamButton.bio();
