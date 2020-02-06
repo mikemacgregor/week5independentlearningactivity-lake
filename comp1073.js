@@ -160,3 +160,30 @@ let buttontobi = document.getElementById("tobiQuadri");
 buttontobi.addEventListener('click', function(){
       tobiQuadri.info(); 
 })
+
+/*-----------------------------*/
+const Vergil = {
+    firstName: 'Vergil',
+    lastName: 'Superintendent',
+    program: 'Lakehead-Georgian Honours Bachelor of Computer Science',
+    home: 'The Bunker',
+    interests: ['Programming','3D Modelling','Virtual Reality'],
+    greeting: function() {
+        alert('Greetings, I am ' + this.lastName + ' ' + this.firstName + '.');
+    },
+    data: function() {
+        alert('First Name: ' + this.firstName
+            + ', Last Name: ' + this.lastName
+            + ', Program: ' + this.program
+            + ', Home: ' + this.home
+            + ', Interests: ' + this.interests);
+    }
+}
+Vergil.petPeeve = 'Messes',
+delete Vergil.lastName;
+
+let Vergil=document.getElementById("Vergil");
+Vergil.addEventListener('click',function(){
+    Vergil.data();
+}
+/*-----------------------------*/
