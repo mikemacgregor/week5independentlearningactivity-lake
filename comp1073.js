@@ -171,7 +171,7 @@ const Vergil = {
     greeting: function() {
         alert('Greetings, I am ' + this.lastName + ' ' + this.firstName + '.');
     },
-    data: function() {
+    vData: function() {
         alert('First Name: ' + this.firstName
             + ', Last Name: ' + this.lastName
             + ', Program: ' + this.program
@@ -184,7 +184,7 @@ delete Vergil.lastName;
 
 let vergilBtn=document.getElementById("Vergil");
 vergilBtn.addEventListener('click',function(){
-    vergilBtn.data();
+    Vergil.vData();
 }
 /*-----------------------------*/
 // Adam
