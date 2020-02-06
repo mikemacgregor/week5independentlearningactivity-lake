@@ -80,7 +80,8 @@ delete gillian.name.last;
 
 let gillianButton = document.getElementById('gillian');
 gillianButton.addEventListener('click', function() {
-  gillian.bio});
+  gillian.bio()
+});
 // end gillian
 
 //add event listener function or event handler property here 
