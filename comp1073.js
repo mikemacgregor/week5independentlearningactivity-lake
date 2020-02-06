@@ -187,3 +187,32 @@ Vergil.addEventListener('click',function(){
     Vergil.data();
 })
 /*-----------------------------*/
+
+//Parth Joshi
+let myinfo= {
+name: ['Parth','Joshi'],
+program:'LUGC Computer Science',
+myhome:'Delhi,India',
+interests:['Travelling','Cooking','Coding','Reading'],
+the_name:function() {
+      alert('Hi, I am'+myinfo.name.first);
+},
+bio:function() {
+      alert(myinfo.name.first+ ' '+myinfo.name.last+' My Program is '+myinfo.program+ ' '+myinfo.myhome+' is my home '+'  my interests are: '+myinfo.interests+'.');
+}
+}
+
+let petpeeve= {
+      pet_peeve: 'Way too Cold Weather !',
+      pp: function() {
+            alert('Biggest Pet Peeve is '+petpeeve.pet_peeve+'.');
+      }
+}
+
+delete myinfo.name.last;
+
+let buttonPj=document.getElementById("parth");
+buttonpj.addEventListener('click',function(){myinfo.bio();})
+
+//Parth's code ends here
+
