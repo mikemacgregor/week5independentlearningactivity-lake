@@ -154,3 +154,31 @@ let buttonRyan=doccument.getElementById("ryanVickers");
 buttonRyan.addEventListener('click',function(){
   Ryan.Bio();
 }
+                            
+ //Cole
+     let cole ={
+      
+      first: 'Cole',
+       last: 'Burgess',
+        
+      program: 'Lakehead Computer Science',
+      home: 'Meaford',
+      interests:['Music','Games', 'Computers'],
+      peeves:{
+            annoys: 'My roomate'
+      },
+      greeting: function(){
+            alert('Hi, I am' + name.first +' '+ name.last );
+      },
+
+      displayAll: function(){
+            alert('I am '+this.first+' from ' + this.home + ', ' +cole.peeves.annoys+ ' annoys me. ' + 'I enjoy '+this.interests[0]);
+      } 
+}
+
+
+let coleButton = document.getElementById('cole');
+
+coleButton.addEventListener('click', function(){
+      cole.displayAll(); 
+    })
